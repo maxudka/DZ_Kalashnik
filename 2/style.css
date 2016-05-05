@@ -1,0 +1,2 @@
+* { font-size:22px }
+td:not(:first-child):nth-child(odd) {background: #f2f2de;}

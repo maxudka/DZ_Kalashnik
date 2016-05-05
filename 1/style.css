@@ -1,0 +1,58 @@
+body {
+  display: inline-block;
+  width: 610px;
+  padding: 10px;
+  border: 1px solid black;
+  font-size: 15px;
+  font-weight: bold;
+}
+h1 {
+  text-align: right;
+  color: #ffa500
+}
+p:first-letter {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: red
+}
+em {
+  color: white;
+  background: #008000
+}
+div#allotment>h2 {
+  color: #ffa500
+}
+div#warehouse>h2 {
+  color: blue
+}
+li {
+  font-weight: bold;
+}
+ol.fruits-list {
+  color: grey;
+  font-weight: lighter;
+}
+ol.vegetables-list {
+  color: red;
+  font-weight: lighter;
+}
+div#warehouse ol.fruits-list {
+  color: green
+}
+div#warehouse>ol.fruits-list {
+  color: green;
+  font-weight: lighter;
+}
+table {font-weight:bold ;}
+thead {
+  text-align: center;
+}
+tbody td:first-child {
+  color: #ffa500
+}
+tbody td:first-child ~ td {
+  text-align: center;
+  color: white;
+  background: green;
+}
