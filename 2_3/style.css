@@ -1,0 +1,3 @@
+* { font-size:16px }
+td:not(:first-child):nth-child(odd) {background: #f2f2de;}
+tr:nth-child(even) {background: #ddebf7;}
