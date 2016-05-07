@@ -1,0 +1,39 @@
+div {
+overflow: hidden;
+  width: 900px;
+  height: 40px;
+  margin-top: -10px;
+  margin-left: -8px;
+  font-family: impact;
+  font-weight: 100;
+  font-size: 16px;
+  background: #a64dff;
+  position: fixed;
+}
+
+a:first-child {
+   float: left;
+margin-left: 20%;
+  color: white;
+  margin-top: -5px;
+  padding: 15px;
+  text-decoration: none;
+}
+a:not(first-child) {
+   float: left;
+  color: white;
+  margin-top: -5px;
+  padding: 15px;
+  text-decoration: none;
+}
+
+a:hover {
+  background: #eeeeee;
+  color: #a0a0a0;
+}
+p {
+	display: block;
+	width: 880px;
+	margin:10px;
+	padding-top: 50px;
+}
