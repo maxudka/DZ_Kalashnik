@@ -26,7 +26,7 @@ div#allotment>h2 {
 div#warehouse>h2 {
   color: blue
 }
-li {
+ul > li {
   font-weight: bold;
 }
 ol.fruits-list {

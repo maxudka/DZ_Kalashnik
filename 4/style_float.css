@@ -30,6 +30,8 @@ a:not(first-child) {
 a:hover {
   background: #eeeeee;
   color: #a0a0a0;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 p {
 	display: block;
