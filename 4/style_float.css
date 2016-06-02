@@ -10,10 +10,10 @@ overflow: hidden;
   background: #a64dff;
   position: fixed;
 }
-
+li {list-style-type: none;}
 a:first-child {
    float: left;
-margin-left: 20%;
+  margin-left:100px;
   color: white;
   margin-top: -5px;
   padding: 15px;
