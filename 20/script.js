@@ -6,7 +6,7 @@
 var month = prompt("Какой сейчас месяц?");
 if (month == "сентябрь")
 { alert ("Вы правы!")}
-else { alert ("Та ну ты что? сентябрь!")};
+else { alert ("Та ну ты что? сентябрь!")}
 
 /* 2 */
 var num = +prompt('Введите любое целое число?');
@@ -26,5 +26,15 @@ while ( ++i > 0 && Num <= 100) { Num = +prompt('Введите число')}
 /* не понял, зачем тут функция?) */
 
 /* 5 */
+var a = +prompt('a?', '');
+switch (a) {
+    case 0: alert (0);
+            break;
+    case 1: alert (1);
+            break;
+    case 2:
+    case 3: alert ('2,3');
+            break;
+}
 
 
