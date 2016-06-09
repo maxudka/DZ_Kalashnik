@@ -37,4 +37,11 @@ switch (a) {
             break;
 }
 
+/* 6 */
+function pow(a, b) {
+    if (b > 1) {
+        return a * pow(a, b - 1);
+        }
+    else {return a;}
+}
 
