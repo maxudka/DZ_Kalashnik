@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #tmp-div {
+            position: fixed;
+            top: 8px;
+            left: 320px;
+            width: 240px;
+            height: 19px;
+            border: 1px solid black;
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+<form action="get" name="form" id="forma">
+<button id="btn">Кнопка</button>
+<input type="text" id="input1" size="30">
+<br><br>
+<select name="sel" id="selection">
+    <option value="empty"></option>
+    <option value="Значение 1">Значение 1</option>
+    <option value="Значение 2">Значение 2</option>
+    <option value="Значение 3">Значение 3</option>
+    <option value="Значение 4">Значение 4</option>
+    <option value="Значение 5">Значение 5</option>
+</select>
+    <p>Ваша история выбора:</p>
+<div class="history" id="selections"></div>
+</form>
+<script>
+    // 1.
+       btn.addEventListener('click', function () { console.log (this.id)});
+   //2.
+        input1.addEventListener('focus', function ()
+            { var tempDiv = document.createElement('div');
+            tempDiv.id = 'tmp-div';
+            forma.insertBefore(tempDiv, forma.children[2]);});
+        input1.addEventListener('keyup', function () {
+            document.getElementById('tmp-div').innerText = document.getElementById('input1').value;
+            });
+        input1.addEventListener('blur', function () {
+            forma.removeChild(document.getElementById('tmp-div'))
+            });
+    //3.
+          var txt = '';
+          var arr = [];
+            selection.addEventListener('change', function () {
+            var select = document.form.elements.sel;
+              for (var i = 0; i < select.options.length; i++) {
+                var option = select.options[i];
+                if (option.selected) {
+                 //   console.log(option.value);
+                    arr [i] = option.value;
+                    txt = txt + arr [i] + ', ';
+                }
+            }
+            document.getElementById('selections').innerText = txt;
+        })
+</script
+</body>
+</html>
