@@ -22,7 +22,8 @@ x + y >= 9 ? alert ('Да!') : alert ('Нет!');
 
 /* 4 */
 var i = 0;
-while ( ++i > 0 && Num <= 100) { Num = +prompt('Введите число')}
+var Num 1;
+while ( ++i > 0 && Num <= 100) { if (Num != null) {Num = +prompt('Введите число')} else break;}
 /* не понял, зачем тут функция?) */
 
 /* 5 */
