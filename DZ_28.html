@@ -11,6 +11,28 @@
             height: 19px;
             border: 1px solid black;
         }
+        #window {
+            position: fixed;
+            left: 0%;
+            top: 0%;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+            background: grey;
+            opacity: 0.6;
+        }
+        #message {
+            position: fixed;
+            top: 25%;
+            left: 25%;
+            z-index: 9999;
+            display: none;
+            width: 50%;
+            height: 50%;
+            text-align: center;
+            border: 1px solid black;
+            background: white;
+        }
     </style>
     <title>Title</title>
 </head>
@@ -30,6 +52,8 @@
     <p>Ваша история выбора:</p>
 <div class="history" id="selections"></div>
 </form>
+<button id="modal">Нажмите для окна</button>
+<div id="message">Нажмите <strong>ESC</strong> для закрытие окна</div>
 <script>
     // 1.
        btn.addEventListener('click', function () { console.log (this.id)});
@@ -59,6 +83,20 @@
             }
             document.getElementById('selections').innerText = txt;
         })
-</script
+    //4.
+        modal.addEventListener('click', function () {
+            var div = document.createElement('div');
+            div.id = "window";
+           // div.innerHTML = "Нажмите <strong>ESC</strong> для закрытие окна";
+            document.body.appendChild(div);
+            document.getElementById('message').style.display = 'inline-block'
+        })
+       window.addEventListener('keydown',function (event) {
+           if (event.keyCode == 27) {
+               document.body.removeChild(document.getElementById('window'));
+               document.getElementById('message').style.display = 'none';
+           }
+       })
+</script>
 </body>
 </html>
