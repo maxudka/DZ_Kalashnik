@@ -53,7 +53,7 @@
 <div class="history" id="selections"></div>
 </form>
 <button id="modal">Нажмите для окна</button>
-<div id="message">Нажмите <strong>ESC</strong> для закрытие окна</div>
+<div id="message">Нажмите <strong>ESC</strong> для закрытия окна</div>
 <script>
     // 1.
        btn.addEventListener('click', function () { console.log (this.id)});
@@ -87,7 +87,6 @@
         modal.addEventListener('click', function () {
             var div = document.createElement('div');
             div.id = "window";
-           // div.innerHTML = "Нажмите <strong>ESC</strong> для закрытие окна";
             document.body.appendChild(div);
             document.getElementById('message').style.display = 'inline-block'
         })
