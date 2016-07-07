@@ -11,7 +11,7 @@
             height: 19px;
             border: 1px solid black;
         }
-        #window {
+        #win {
             position: fixed;
             left: 0%;
             top: 0%;
@@ -88,13 +88,13 @@
     //4.
         modal.addEventListener('click', function () {
             var div = document.createElement('div');
-            div.id = "window";
+            div.id = "win";
             document.body.appendChild(div);
             document.getElementById('message').style.display = 'inline-block'
         })
-       window.addEventListener('keydown',function (event) {
+       document.addEventListener('keydown',function (event) {
            if (event.keyCode == 27) {
-               document.body.removeChild(document.getElementById('window'));
+               document.body.removeChild(document.getElementById('win'));
                document.getElementById('message').style.display = 'none';
            }
        })
