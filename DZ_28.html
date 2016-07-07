@@ -5,7 +5,7 @@
     <style>
         #tmp-div {
             position: fixed;
-            top: 8px;
+            top: 46px;
             left: 320px;
             width: 240px;
             height: 19px;
@@ -37,8 +37,10 @@
     <title>Title</title>
 </head>
 <body>
-<form action="get" name="form" id="forma">
 <button id="btn">Кнопка</button>
+<br><br>
+<form action="" name="form" id="forma">
+
 <input type="text" id="input1" size="30">
 <br><br>
 <select name="sel" id="selection">
@@ -56,7 +58,7 @@
 <div id="message">Нажмите <strong>ESC</strong> для закрытия окна</div>
 <script>
     // 1.
-       btn.addEventListener('click', function () { console.log (this.id)});
+       btn.addEventListener('click', function () { console.log (btn.id)});
    //2.
         input1.addEventListener('focus', function ()
             { var tempDiv = document.createElement('div');
